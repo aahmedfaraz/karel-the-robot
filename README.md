@@ -1,9 +1,11 @@
 # karel-the-robot
 This repo contains my practice about Karel the Robot for Section-Leader application in Stanford-Code-In-Place.
 
+# Reference
+
 This appendix defines the structure of the Karel programming language on a single page.
 
-# Base Karel commnds:
+## Base Karel commnds:
 
 ```py
 move()
@@ -12,7 +14,7 @@ put_beeper()
 pick_beeper()
 ```
 
-# Karel program structures:
+## Karel program structures:
 
 ```py
 # Comments can be included in any part
@@ -25,7 +27,7 @@ def main() :
 declarations of other functions
 ```
 
-# Names of the conditions:
+## Names of the conditions:
 
 ```py
 front_is_clear()
@@ -47,7 +49,7 @@ not_facing_east()
 not_facing_west()
 ```
 
-# Conditions:
+## Conditions:
 
 ```py
 if condition:
@@ -59,7 +61,7 @@ else:
     code block for "no"
 ```
 
-# Loops:
+## Loops:
 
 ```py
 for i in range( count):
@@ -69,14 +71,14 @@ while condition:
     code to repeat
 ```
 
-# Function Declaration:
+## Function Declaration:
 
 ```py
 defname():
     code in the body of the function.
 ```
 
-# Extra Karel Commands:
+## Extra Karel Commands:
 
 ```py
 paint_corner(COLOR_NAME)
