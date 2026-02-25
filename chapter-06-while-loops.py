@@ -32,3 +32,27 @@ def main():
       put_beeper()
       # move to the next square
       move()
+
+
+# The bug in this program is an example of a programming problem called a fencepost error. 
+# The name comes from the fact that if you want to build a fence made of panels 
+# which have one fence post on either size, the number of fence posts is always one greater 
+# than the number of panels. How many fence posts, for example, 
+# do you need to build a fence with 10 panels? The answer is 11
+
+# File: BeeperLine.py
+# ------------------------------
+# Uses a while loop to place a line of beepers.
+# This program works for a world of any size.
+from karel.stanfordkarel import *
+
+# program starts at main
+def main():
+   # repeats until karel faces a wall
+   while front_is_clear():
+      # place a beeper on current square
+      put_beeper()
+      # move to the next square
+      move()
+   # solves the fencepost bug
+   put_beeper()
